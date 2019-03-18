@@ -1,5 +1,9 @@
 import React, { Component } from "react";
+import Button from "@material-ui/core/Button";
 import styled from "styled-components";
+import { IconButton, MenuItem } from "@material-ui/core";
+import { withStyles } from "@material-ui/core/styles";
+import UserToolBar from "./UserToolBar";
 
 const Container = styled.div`
   grid-area: appbar;
@@ -8,7 +12,11 @@ const Container = styled.div`
 
 class AppBar extends Component {
   render() {
-    return <Container> app bar</Container>;
+    return (
+      <Container>
+        <UserToolBar />
+      </Container>
+    );
   }
 }
 
